@@ -1,0 +1,19 @@
+.contador {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: auto;
+    height: 100px;
+    background-color: #28a464;
+    color: white;
+    font-size: 70px;
+    font-weight: bold;
+    border-radius: 5px;
+  }
+  
+@media (max-width:600px) {
+  .contador {
+    font-size: 45px;
+  }
+}
+  

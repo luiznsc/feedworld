@@ -1,0 +1,209 @@
+body{
+    margin:0;
+    height: 100%;
+    position: relative;
+    background: white;
+    font-family: 'Lato', sans-serif;
+}
+.containerHome{
+    width: 100%;
+    height: 500px;
+    padding: 200px 0 0 0;
+}
+
+#logoinicial{
+    display: block;
+    width: 400px;
+    height: 80px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+#h1-inicio{
+    position: relative;
+    width: 100%;
+    align-items: center;
+    text-align: center;
+    margin-top: 0px;
+    font-style: italic;
+    float: right;
+    color: #10222e;
+    font-weight: 500;
+}
+
+.btn{
+    display:flex;
+    position: relative;
+    border: none;
+    padding: 16px 32px;
+    text-align: center;
+    font-size: 17px;
+    margin-left: auto;
+    margin-right: auto;
+    transition-duration: 0.5s;
+    cursor: pointer;
+    font-weight: 500;
+    border-radius: 2px;
+    text-decoration: none;
+}
+
+.botaocomece{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    text-decoration: none;
+}
+
+.btn-comece{
+    background-color: white;
+    color: #28a464;
+    text-decoration: none;
+    font-size:large;
+    border: solid #28a464;
+}
+.btn-comece:hover{
+    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    background-color: #28a464;
+    color: white;
+}
+.btn-comece:active{
+    color: #004840;
+    transition:0.1s;
+}
+
+a{
+    text-decoration: none;
+}
+
+.scroll-indicador {
+    margin-top: 50px;
+    text-align: center;
+  }
+  
+.seta-icon {
+    font-size: 100px;
+    margin-top: 10px;
+    animation: arrow-bounce 1s infinite;
+    color:#004840;
+}
+
+@keyframes arrow-bounce {
+  0%, 100% {
+    transform: translateY(0);
+  }
+  50% {
+    transform: translateY(8px);
+  }
+}
+  
+
+@media (max-width:600px) {
+    #logoinicial{
+        display: block;
+        width: 250px;
+        height: 45px;
+    }
+    #h1-inicio{
+        font-size: 16px;
+        margin-top: 5px;
+        margin-bottom: 100px;
+        font-style: italic;
+    }
+    
+    h3{
+        font-size: 10px;
+    }
+    
+    .btn{
+        font-size: 13px;
+    }
+    .scroll-indicador {
+        margin-top: 50px;
+      }
+    .seta-icon {
+        font-size: 80px;
+    }
+}
+@media (min-width:600px) {
+    #logoinicial{
+        display: block;
+        width: 390px;
+        height: 70px;
+    }
+    #h1-inicio{
+        font-size: 22px;
+        margin-top: 5px;
+        margin-bottom: 100px;
+        font-style: italic;
+    }
+    
+    h3{
+        font-size: 12px;
+    }
+    
+    .btn{
+        font-size: 14px;
+    }
+}
+@media (min-width:768px) {
+    #logoinicial{
+        display: block;
+        width: 390px;
+        height: 70px;
+    }
+    #h1-inicio{
+        font-size: 22px;
+        margin-top: 5px;
+        margin-bottom: 100px;
+        font-style: italic;
+    }
+    
+    h3{
+        font-size: 12px;
+    }
+    
+    .btn{
+        font-size: 14px;
+    }
+}
+@media (min-width:992px) {
+    #logoinicial{
+        display: block;
+        width: 400px;
+        height: 70px;
+    }
+    #h1-inicio{
+        font-size: 22px;
+        margin-top: 5px;
+        margin-bottom: 100px;
+        font-style: italic;
+    }
+    
+    h3{
+        font-size: 14px;
+    }
+    
+    .btn{
+        font-size: 16px;
+    }
+}
+@media (min-width:1200px) {
+    #logoinicial{
+        display: block;
+        width: 410px;
+        height: 80px;
+    }
+    #h1-inicio{
+        font-size: 20px;
+        margin-bottom: 100px;
+        font-style: italic;
+    }
+    
+    h3{
+        font-size: 15px;
+    }
+    
+    .btn{
+        font-size: 20px;
+    }
+}

@@ -1,0 +1,412 @@
+.proposito1{
+    display: flex;
+    flex-direction: column;
+    width: 400px;
+    height: 150px;
+    background-color: #28a464;
+    margin: 20px auto;
+    padding: 20px;
+    border-radius: 5px;
+}
+
+.text{
+    width: 400px;
+    height: 50px;
+}
+.text p{
+    font-size: 25px;
+    margin: 0;
+    text-align: center;
+    color: white;
+}
+
+.proposito2{
+    display: flex;
+    width: 40%;
+    height: 60px;
+    background-color: #FFF5D0;
+    margin: 90px auto;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.08);
+}
+
+.proposito2 p{
+    width: auto;
+    height: auto;
+    font-size: 20px;
+    text-align: center;
+    justify-content: center;
+    margin: auto;
+    color: #10222e;
+    font-weight: 600;
+}
+
+.linhaesquerda{
+    display: flex;
+    width: 48%;
+    height: 1vh;
+    background-color: #004840;
+    margin-left: auto;
+    border-radius: 30px 0 0 30px;
+    box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.08);
+
+}
+
+.linhadireita{
+    display: flex;
+    width: 48%;
+    height: 1vh;
+    background-color: #004840;
+    margin-right: auto;
+    border-radius: 0 30px 30px 0;
+    box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.08);
+}
+
+.qs1{
+    display: flex;
+    width: 48%;
+    height: 200px;
+    margin-top: 50px;
+    margin-left: auto;
+}
+.qs1 h2{
+    width: auto;
+    height: auto;
+    padding: 5px;
+    font-size: 20px;
+    margin: auto;
+    color: #10222e;
+    text-align: right;
+    font-weight: 500;
+    margin-right: 50px;
+}
+
+.qs2{
+    display: flex;
+    width: 48%;
+    height: 200px;
+    margin-right: auto;
+}
+.qs2 h2{
+    width: auto;
+    height: auto;
+    padding: 5px;
+    font-size: 20px;
+    margin: auto;
+    color: #10222e;
+    text-align: left;
+    font-weight: 500;
+    margin-left: 50px;
+}
+
+.qs3{
+    display: flex;
+    width: 48%;
+    height: 200px;
+    margin-left: auto;
+}
+.qs3 h2{
+    width: auto;
+    height: auto;
+    padding: 5px;
+    font-size: 20px;
+    margin: auto;
+    color: #10222e;
+    text-align: right;
+    font-weight: 500;
+    margin-right: 50px;
+}
+
+@media (max-width:600px) {
+    .linhadireita, .linhaesquerda{
+        width: 280px;
+        height: 4px;
+        align-items: center;
+        margin: 20px auto 20px auto;
+        border-radius: 30px;
+    }
+    .proposito1{
+        margin-top: 0;
+        margin-bottom: 30px;
+        padding: 10px;
+        border-radius: 10px;
+    }
+
+    .proposito1 p{
+        font-size: 15px;
+        font-weight: 500;
+    }
+
+    .proposito1{
+        width: 250px;
+        height: 110px;
+        background-color: #28a464;
+        padding: 20px;
+    }
+    
+    .text{
+        width: 250px;
+        height: 50px;
+    }
+    .text p{
+        font-size: 15px;
+        margin: 0;
+        text-align: center;
+        color: white;
+    }
+    .qs1{
+        width: 270px;
+        height:auto;
+        margin: 0 auto;
+        padding: 0;
+    }
+
+    .qs1 h2{
+        padding: 0; 
+        font-size: 15px;
+        color: #10222e;
+        text-align: justify;
+        margin: 0;
+    }
+
+    .qs2{
+        width: 270px;
+        height:auto;
+        margin: 0 auto;
+        padding: 0;
+    }
+    .qs2 h2{
+        padding: 0; 
+        font-size: 15px;
+        color: #10222e;
+        text-align: justify;
+        margin: 0;
+    }
+
+    .qs3{
+        width: 270px;
+        height:auto;
+        margin: 0 auto;
+        padding: 0;
+    }
+    .qs3 h2{
+        padding: 0; 
+        font-size: 15px;
+        color: #10222e;
+        text-align: justify;
+        margin: 0;
+    }
+    .proposito2{
+        width: 250px;
+        height: auto;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        border-radius: 2px;
+        background-color: #28a464;
+    }
+    
+    .proposito2 p{
+        margin: auto;
+        color: white;
+        font-weight: 500;
+        font-size: 15px;
+    }
+}
+
+@media (min-width:600px){
+    .proposito2{
+        width: 300px;
+        height: auto;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        border-radius: 2px;
+        background-color: #28a464;
+    }
+    
+    .proposito2 p{
+        margin: auto;
+        color: white;
+        font-weight: 500;
+        font-size: 18px;
+    }
+    
+    .linhaesquerda{
+        display: flex;
+        width: 75%;
+        height: auto;
+        height: 1vh;
+        background-color: #004840;
+        margin-left: auto;
+        border-radius: 30px 0 0 30px;
+        box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.08);
+        margin: 10px 0 40px auto;
+    }
+    
+    .linhadireita{
+        display: flex;
+        width: 75%;
+        height: auto;
+        height: 1vh;
+        background-color: #004840;
+        margin-right: auto;
+        border-radius: 0 30px 30px 0;
+        box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.08);
+        margin: 15px 0 15px 0;
+    }
+    
+    .qs1, .qs3{
+        display: flex;
+        width: 70%;
+        height: auto;
+        margin-top: 50px;
+        margin-left: auto;
+    }
+    .qs1 h2{
+        width: auto;
+        height: auto;
+        padding: 5px;
+        font-size: 20px;
+        margin: auto;
+        color: #10222e;
+        text-align: right;
+        font-weight: 500;
+        margin-right: 20px;
+    }
+    .qs3 h2{
+        width: auto;
+        height: auto;
+        padding: 5px;
+        font-size: 20px;
+        margin: auto;
+        color: #10222e;
+        text-align: right;
+        font-weight: 500;
+        margin-right: 20px;
+    }
+    
+    .qs2{
+        display: flex;
+        width: 70%;
+        height: auto;
+        margin-right: auto;
+    }
+    .qs2 h2{
+        width: auto;
+        height: auto;
+        padding: 5px;
+        font-size: 20px;
+        margin: auto;
+        color: #10222e;
+        text-align: left;
+        font-weight: 500;
+        margin-left: 20px;
+    }
+}
+
+@media(min-width: 1024px){
+    .proposito2{
+        width: 350px;
+        height: auto;
+        margin-top: 50px;
+        margin-bottom: 50px;
+        border-radius: 2px;
+        background-color: #28a464;
+    }
+    
+    .proposito2 p{
+        margin: auto;
+        color: white;
+        font-weight: 500;
+        font-size: 20px;
+    }
+    
+    .linhaesquerda{
+        display: flex;
+        width: 50%;
+        height: 5px;
+        background-color: #004840;
+        margin-left: auto;
+        border-radius: 30px 0 0 30px;
+        box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.08);
+    
+    }
+    
+    .linhadireita{
+        display: flex;
+        width: 50%;
+        height: 5px;
+        background-color: #004840;
+        margin-right: auto;
+        border-radius: 0 30px 30px 0;
+        box-shadow: 8px 8px 16px rgba(0, 0, 0, 0.08);
+    }
+    
+    .qs1{
+        display: flex;
+        width: 48%;
+        height: auto;
+        margin-top: 50px;
+        margin-left: auto;
+    }
+    .qs1 h2{
+        width: auto;
+        height: auto;
+        padding: 5px;
+        font-size: 20px;
+        margin: auto;
+        color: #10222e;
+        text-align: right;
+        font-weight: 500;
+        margin-right: 15px;
+    }
+    
+    .qs2{
+        display: flex;
+        width: 48%;
+        height: auto;
+        margin-right: auto;
+    }
+    .qs2 h2{
+        margin-left: 15px;
+    }
+    
+    .qs3{
+        width: 48%;
+        height: auto;
+    }
+    .qs3 h2{
+        margin-right: 15px;
+    }
+}
+
+@media(min-width: 1200px){
+    .qs1{
+        display: flex;
+        width: 48%;
+        height: auto;
+        margin-top: 50px;
+        margin-left: auto;
+    }
+    .qs1 h2{
+        margin-right: 80px;
+    }
+    
+    .qs2{
+        display: flex;
+        width: 48%;
+        height: auto;
+        margin-right: auto;
+    }
+    .qs2 h2{
+        margin-left: 80px;
+    }
+    
+    .qs3{
+        width: 48%;
+        height: auto;
+    }
+    .qs3 h2{
+        margin-right: 80px;
+    }
+}

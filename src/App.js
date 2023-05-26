@@ -1,25 +1,36 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import {BrowserRouter,Routes,Route} from 'react-router-dom';
+import { Helmet } from 'react-helmet';
 
-function App() {
+import Home from './Componentes/Home/Home';
+import HomeUser from './Componentes/HomeUser/HomeUser';
+
+
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className='tudo'>
+    <Helmet>
+      <meta charSet='utf-8'/>
+      <title>FeedWorld</title>
+    </Helmet>
+    
+
+      <BrowserRouter>
+        <Routes>
+
+          {/* COMPONENTES INTEGRADOS */}
+          <Route path='/' element={<Home/>}/>
+          {/* <Route path='/login' element={<Login/>}/> */}
+          <Route path='/homeuser' element={<HomeUser/>}/>
+          {/* <Route path='/fase1/*' element={<Fase1/>}/>
+          <Route path='/fase2/*' element={<Fase2/>}/>
+          <Route path='/fase3/*' element={<Fase3/>}/>
+          <Route path='/quemsomos' element={<Sobre/>}/> */}
+
+        </Routes>
+      </BrowserRouter>
     </div>
   );
 }
 
-export default App;
+

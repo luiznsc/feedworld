@@ -1,0 +1,43 @@
+footer {
+  display: flex;
+  width: 100%;
+  height: 100px;
+  padding: 0;
+  background-color: #E0E7E9;
+  align-items: justify;
+  justify-content: center;
+}
+
+.containerInfo {
+  width: 100%;
+  height: 100%;
+}
+
+.containerInfo p {
+  text-align: center;
+  margin: 5px;
+  font-size: 15px;
+  color: #004840;
+}
+  
+
+@media (max-width: 562px) {
+  .containerSN a{
+    font-size: 13px;
+  }
+  
+  .containerInfo {
+    position: relative;
+    width: 100%;
+    height: 40px;
+    z-index: 0;
+    margin-top: 40px;
+  }
+  
+  .containerInfo p {
+    text-align: center;
+    margin: 0;
+    font-size: 9px;
+    color: #EBE7D9;
+  }
+}

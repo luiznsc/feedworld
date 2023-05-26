@@ -1,0 +1,125 @@
+header {
+  display: flex;
+  background:  #E0E7E9;
+  width: 100%;
+  height: 100px;
+  align-items: center;
+} 
+
+#logo {
+  width: 250px;
+  height: 50px;
+  margin-left: 30px;
+} 
+
+/* MENU NORMAL */
+.menu {
+  list-style: none;
+  padding: 50px;
+  margin-left: auto;
+  text-decoration: none;
+}
+
+.menu li {
+  display: inline-block;
+  margin-left: 20px;
+  text-decoration: none;
+  color: #004840;
+}
+
+.menu li a {
+  text-decoration: none;
+  color: #004840;
+}
+
+.menu li:first-child {
+  margin-left: 0;
+}
+/* MENU SANDUICHE ATIVA NO MAX 600PX */
+.hamburger-menu {
+  display: none;
+  margin-left: auto;
+  padding: 50px;
+  color: #5F5F5F;
+}
+
+@media (max-width: 600px) {
+  #logo {
+    width: 130px;
+    height: 25px;
+    margin-left: 15px;
+  } 
+
+  .menu {
+    display: none;
+    padding: 10px;
+  }
+
+  .hamburger-menu {
+    display: block;
+    cursor: pointer;
+    padding: 25px;
+  }
+
+  .hamburger-menu span {
+    display: block;
+    cursor: pointer;
+    width: 30px;
+    height: 4px;
+    background-color: #004840;
+    margin-top: 6px;
+  }
+  .hamburger-menu span:last-child {
+    margin-bottom: 0;
+  }
+
+  .menu.show {
+    display: block !important;
+    position: absolute;
+    top: 100px;
+    right: 0;
+    background-color: #E0E7E9;
+    padding: 20px;
+    border-radius: 0 0 0 10px;
+    list-style: none;
+    margin: 0;
+    text-align: right;
+  }
+
+  .menu.show li {
+    display: block;
+    margin-bottom: 10px;
+  }
+
+  .menu.show li a {
+    color: #004840;
+    text-decoration: none;
+    font-size: 13px;
+  }
+}
+
+@media (min-width: 600px) {
+  #logo {
+    width: 180px;
+    height: 35px;
+    margin-left: 30px;
+    margin-top: 5px;
+  } 
+}
+@media (min-width: 768px) {
+  #logo {
+    width: 210px;
+    height: 40px;
+    margin-left: 50px;
+  } 
+}
+@media (min-width: 1000px) {
+  #logo {
+    width: 250px;
+    height: 50px;
+    margin-left: 120px;
+  } 
+  .menu {
+    margin-right: 80px;;
+  }
+}
