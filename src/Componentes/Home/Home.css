@@ -8,13 +8,13 @@ body{
 .containerHome{
     width: 100%;
     height: 500px;
-    padding: 200px 0 0 0;
+    padding: 150px 0 0 0;
 }
 
 #logoinicial{
     display: block;
     width: 400px;
-    height: 80px;
+    height: 85px;
     margin-left: auto;
     margin-right: auto;
 
@@ -22,6 +22,7 @@ body{
 #h1-inicio{
     position: relative;
     width: 100%;
+    height: auto;
     align-items: center;
     text-align: center;
     margin-top: 0px;
@@ -47,28 +48,52 @@ body{
     text-decoration: none;
 }
 
-.botaocomece{
+.botaocomece, .botaologin{
     width: 100%;
     display: flex;
     justify-content: center;
     text-decoration: none;
+    margin-bottom: 20px;
 }
 
-.btn-comece{
-    background-color: white;
-    color: #28a464;
-    text-decoration: none;
-    font-size:large;
+#my-button{
+    background-color: white ;
+    color: #28a464 ;
+    text-decoration: none ;
+    font-size:large ;
     border: solid #28a464;
+    padding: 10px 20px;
+    border-radius: 3px;
 }
-.btn-comece:hover{
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+#my-button:hover{
     background-color: #28a464;
     color: white;
 }
-.btn-comece:active{
-    color: #004840;
+#my-button:active{
+    color: white;
     transition:0.1s;
+    background-color: #004840;
+    border: solid #004840
+}
+
+#my-button-login{
+    background-color: #28a464 ;
+    color: white ;
+    text-decoration: none ;
+    font-size:large ;
+    border: solid #28a464;
+    padding: 10px 20px;
+    border-radius: 3px;
+}
+#my-button-login:hover{
+    background-color: white;
+    color: #28a464;
+}
+ #my-button-login:active{
+    color: white;
+    transition:0.1s;
+    background-color: #004840;
+    border: solid #004840
 }
 
 a{
@@ -76,8 +101,10 @@ a{
 }
 
 .scroll-indicador {
-    margin-top: 50px;
+    margin-top: 10px;
+    margin-bottom:50px;;
     text-align: center;
+    z-index: 1;
   }
   
 .seta-icon {
@@ -95,18 +122,24 @@ a{
     transform: translateY(8px);
   }
 }
+
+.sobre-container{
+    width: 100%;
+    height: 100%;
+    padding: 200px 0 0 0;
+}
   
 
 @media (max-width:600px) {
     #logoinicial{
         display: block;
         width: 250px;
-        height: 45px;
+        height: 55px;
     }
     #h1-inicio{
         font-size: 16px;
         margin-top: 5px;
-        margin-bottom: 100px;
+        margin-bottom: 50px;
         font-style: italic;
     }
     
@@ -127,13 +160,13 @@ a{
 @media (min-width:600px) {
     #logoinicial{
         display: block;
-        width: 390px;
-        height: 70px;
+        width: 350px;
+        height: 75px;
     }
     #h1-inicio{
         font-size: 22px;
         margin-top: 5px;
-        margin-bottom: 100px;
+        margin-bottom: 50px;
         font-style: italic;
     }
     
@@ -148,34 +181,30 @@ a{
 @media (min-width:768px) {
     #logoinicial{
         display: block;
-        width: 390px;
-        height: 70px;
+        width: 350px;
+        height: 75px;
     }
     #h1-inicio{
         font-size: 22px;
         margin-top: 5px;
-        margin-bottom: 100px;
+        margin-bottom: 50px;
         font-style: italic;
     }
     
     h3{
         font-size: 12px;
     }
-    
-    .btn{
-        font-size: 14px;
-    }
 }
 @media (min-width:992px) {
     #logoinicial{
         display: block;
-        width: 400px;
-        height: 70px;
+        width: 380px;
+        height: 85px;
     }
     #h1-inicio{
         font-size: 22px;
         margin-top: 5px;
-        margin-bottom: 100px;
+        margin-bottom: 50px;
         font-style: italic;
     }
     
@@ -183,15 +212,12 @@ a{
         font-size: 14px;
     }
     
-    .btn{
-        font-size: 16px;
-    }
 }
 @media (min-width:1200px) {
     #logoinicial{
         display: block;
-        width: 410px;
-        height: 80px;
+        width: 400px;
+        height: 85px;
     }
     #h1-inicio{
         font-size: 20px;

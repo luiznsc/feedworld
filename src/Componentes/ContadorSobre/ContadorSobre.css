@@ -4,16 +4,19 @@
     align-items: center;
     width: auto;
     height: 100px;
-    background-color: #28a464;
     color: white;
     font-size: 70px;
     font-weight: bold;
     border-radius: 5px;
+    padding: 20px;
   }
   
 @media (max-width:600px) {
   .contador {
-    font-size: 45px;
+    height: 90px;
+    font-size: 40px;
+    border-radius: 5px;
+    padding: 5px;
   }
 }
   

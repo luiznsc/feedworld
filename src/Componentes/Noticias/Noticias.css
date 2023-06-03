@@ -1,0 +1,9 @@
+.container-noticias{
+    width: auto;
+    height: auto;
+}
+.card{
+    width: 100%;
+    height: auto;
+    margin: 30px auto;
+}

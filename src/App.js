@@ -4,29 +4,33 @@ import { Helmet } from 'react-helmet';
 
 import Home from './Componentes/Home/Home';
 import HomeUser from './Componentes/HomeUser/HomeUser';
-
+import CadastroTela from './Componentes/Cadastro/CadastroTela';
+import Login from './Componentes/Login/Login';
+import MeuGerenciamento from './Componentes/MeuGerenciamento/MeuGerenciamento';
+import Duvidas from './Componentes/Duvidas/Duvidas';
+import Secao1 from './Componentes/Secao1/Secao1';
 
 export default function App() {
   return (
+    
     <div className='tudo'>
     <Helmet>
       <meta charSet='utf-8'/>
       <title>FeedWorld</title>
     </Helmet>
-    
-
+  
       <BrowserRouter>
         <Routes>
 
-          {/* COMPONENTES INTEGRADOS */}
           <Route path='/' element={<Home/>}/>
-          {/* <Route path='/login' element={<Login/>}/> */}
           <Route path='/homeuser' element={<HomeUser/>}/>
-          {/* <Route path='/fase1/*' element={<Fase1/>}/>
-          <Route path='/fase2/*' element={<Fase2/>}/>
-          <Route path='/fase3/*' element={<Fase3/>}/>
-          <Route path='/quemsomos' element={<Sobre/>}/> */}
-
+          <Route path='/meugerenciamento' element={<MeuGerenciamento/>}/>
+          <Route path='/login' element={<Login/>}/>   
+          <Route path='/cadastro' element={<CadastroTela/>}/>
+          <Route path='/duvidas' element={<Duvidas/>}/>
+          <Route path='/secao1' element={<Secao1/>}/>
+          {/* <Route path='/secao2' element={<Secao2/>}/>
+          <Route path='/secao3' element={<Secao3/>}/> */}
         </Routes>
       </BrowserRouter>
     </div>

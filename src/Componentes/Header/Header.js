@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 export default function Header() {    
   const [showMenu, setShowMenu] = useState(false);
   const itemmenu1 = "Dúvidas?";
-  const itemmenu3 = "Notícias";
+  const itemmenu2 = "Meu Gerenciamento";
 
   function handleMenuClick() {
     setShowMenu(!showMenu);
@@ -14,7 +14,7 @@ export default function Header() {
 
   return (
     <header>
-      <Link to={"/"}><img id="logo" src="./img/FeedWorld.png" alt="img logo"></img></Link>
+      <Link to={"/"}><img id="logo" src="./img/logo.png" alt="img logo"></img></Link>
       
       <div className="hamburger-menu" onClick={handleMenuClick}>
         <span></span>
@@ -22,8 +22,8 @@ export default function Header() {
         <span></span>
       </div>
       <ul className={`menu ${showMenu ? 'show' : ''}`}>
-        <li><Link to={"/user"}>{itemmenu1}</Link></li>
-        <li><Link to={"/"}>{itemmenu3}</Link></li>
+        <li><Link to={"/duvidas"}>{itemmenu1}</Link></li>
+        <li><Link to={"/meugerenciamento"}>{itemmenu2}</Link></li>
       </ul>
     </header>
   );

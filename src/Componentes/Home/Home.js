@@ -17,20 +17,28 @@ export default function Home(){
     return(
         <>
         <div className='containerHome'>
-            <img id="logoinicial" src="./img/FeedWorld.png" alt="imagem logo"></img>
+            <img id="logoinicial" src="./img/logo.png" alt="imagem logo"></img>
             <h1 id="h1-inicio">with technology</h1>
 
+
+            <div className='botaologin'>
+                <Link to={"/login"}><button id="my-button-login">LOGIN</button></Link>
+            </div>
+
             <div className='botaocomece'>
-                <Link to={"/homeuser"}><button className="btn btn-comece">Começar</button></Link>
+                <Link to={"/cadastro"}><button id="my-button">CADASTRAR</button></Link>
             </div>
             <br/>
+
+            
 
             <div className='scroll-indicador' onClick={handleScroll}>
                 <AiOutlineArrowDown className='seta-icon' />
             </div>
         </div>
-
-        <Sobre/>
+        <div className='sobre-container'>
+            <Sobre/>
+        </div>
         </>
     )
 }

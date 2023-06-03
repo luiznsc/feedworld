@@ -1,9 +1,9 @@
 footer {
   display: flex;
   width: 100%;
-  height: 100px;
+  height: auto;
   padding: 0;
-  background-color: #E0E7E9;
+  background-color: #004840;
   align-items: justify;
   justify-content: center;
 }
@@ -15,29 +15,29 @@ footer {
 
 .containerInfo p {
   text-align: center;
-  margin: 5px;
-  font-size: 15px;
-  color: #004840;
+  margin: 2px;
+  font-size: 12px;
+  color: white;
 }
   
 
 @media (max-width: 562px) {
   .containerSN a{
-    font-size: 13px;
+    font-size: 12px;
   }
   
   .containerInfo {
     position: relative;
     width: 100%;
-    height: 40px;
+    height: auto;
     z-index: 0;
-    margin-top: 40px;
+    margin-top: 0;
   }
   
   .containerInfo p {
     text-align: center;
     margin: 0;
     font-size: 9px;
-    color: #EBE7D9;
+    color: white;
   }
 }

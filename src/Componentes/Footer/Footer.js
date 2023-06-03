@@ -7,9 +7,9 @@ export default function Footer(){
             <footer>
                 <div className="containerInfo">
                     <p>Luiz Henrique de Jesus do Nascimento - RM96335</p>
-                    <p>Eduardo Correa Fagundes - RM</p>
-                    <p>Murilo Ariel Reis- RM</p>
-                    <p>Samuel Enderson - RM</p>
+                    <p>Eduardo Correa Fagundes - RM 97195</p>
+                    <p>Murilo Ariel Reis - RM97002</p>
+                    <p>Samuel Enderson - RM9677</p>
                 </div>
             </footer>
         </>

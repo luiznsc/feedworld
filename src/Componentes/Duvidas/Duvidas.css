@@ -1,0 +1,142 @@
+.container-duvidas {
+    width: 100%;
+    height: auto;
+    background-color: transparent;
+}
+  
+  .formulario-duvidas {
+    width: 80%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    background-color: white;
+    box-shadow: 0px 0px 5px #ccc;
+    margin: 80px auto;
+    border-radius: 5px;
+    padding:30px;
+  }
+  
+  .formulario-duvidas p {
+    margin-bottom: 0;
+    align-items: flex-start;
+  }
+  
+  .formulario-duvidas h2 {
+    margin-bottom: 30px;
+    font-weight: bold;
+    color: #28a464;
+    font-size: 24px;
+  }
+  
+  .formulario-duvidas form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; 
+  }
+  
+  .formulario-duvidas label {
+    font-weight: bold;
+    color: #28a464;
+  }
+  
+  .formulario-duvidas input{
+    margin-bottom: 0; 
+    padding: 5px;
+    border: 1px solid #ccc;
+    width: 100%;
+    margin-bottom: 0px;
+  }
+  .formulario-duvidas textarea {
+    margin-bottom: 0; 
+    padding: 5px;
+    border: 1px solid #ccc;
+    width: 100%;
+  }
+  
+  .formulario-duvidas span {
+    color: red;
+    font-size: 12px;
+  }
+  .duvida-email{
+    margin-bottom: 30px;
+  }
+  
+  #btn-duvidas {
+    width: 100px;
+    padding: 5px;
+    margin-top: 20px;
+    background-color: #28a464;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+  }
+  
+  #btn-duvidas:hover {
+    background-color:#1c7e52;
+  }
+  
+@media (max-width: 600px) {
+    .container-duvidas {
+        width: 100%;
+        height: auto;
+        background-color: white;
+      }
+      
+      .formulario-duvidas {
+        width: 80%;
+        height: auto;
+        padding:30px;
+      }
+      .formulario-duvidas h2 {
+        margin-bottom: 30px;
+        font-weight: bold;
+        color: #28a464;
+        font-size: 18px;
+      }
+      
+      .formulario-duvidas form {
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+      }
+      
+      .formulario-duvidas label {
+        font-weight: bold;
+        color: #28a464;
+      }
+      
+      .formulario-duvidas input{
+        margin-bottom: 0; 
+        padding: 5px;
+        border: 1px solid #ccc;
+        width: 100%;
+      }
+      .formulario-duvidas textarea {
+        margin-bottom: 0; 
+        padding: 5px;
+        border: 1px solid #ccc;
+        width: 100%;
+      }
+      
+      .formulario-duvidas span {
+        color: red;
+        font-size: 12px;
+      }
+      
+      #btn-duvidas {
+        width: 100px;
+        padding: 5px;
+        margin-top: 20px;
+      }
+
+  }
+
+@media (min-width: 1024px){
+    .formulario-duvidas {
+        width: 800px;
+      }
+}

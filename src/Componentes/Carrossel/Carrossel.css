@@ -1,0 +1,73 @@
+/* Estilos específicos para o componente de carrossel */
+.container-carousel {
+    width: 60%;
+    margin: 60px auto 60px auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+  }
+  
+  .carousel-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+    filter: brightness(0.6);
+  }
+  
+  .carousel-caption h3 {
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .carousel-caption p {
+    font-size: 1rem;
+  }
+
+@media (max-width:600px) {
+  .container-carousel {
+    width: 100%;
+    margin: 30px auto 30px auto;
+  }
+  .container-carousel h3{
+    font-size: 12px;
+  }
+  .container-carousel p{
+    font-size: 10px;
+  }
+}
+@media (min-width:600px) {
+  .container-carousel {
+    width: 100%;
+    margin: 30px auto 30px auto;
+  }
+  .container-carousel h3{
+    font-size: 18px;
+  }
+  .container-carousel p{
+    font-size: 11px;
+  }
+}
+@media (min-width:768px) {
+  .container-carousel {
+    width: 90%;
+    margin: 40px auto 40px auto;
+  }
+}
+@media (min-width:1024px) {
+  .container-carousel {
+    width: 820px;
+    margin: 40px auto 40px auto;
+  }
+  .container-carousel h3{
+    font-size: 26px;
+  }
+  .container-carousel p{
+    font-size: 16px;
+  }
+}
+@media (min-width:1200px) {
+  .container-carousel {
+    width: 1000px;
+    margin: 40px auto 40px auto;
+ }
+}

@@ -1,0 +1,151 @@
+.containerCriarconta{
+    display: flex;
+    width: 100%;
+    height: 530px;
+    justify-content: center;
+    align-items: center;
+}
+
+.formulariologin{
+    display: block;
+    width: 400px;
+    height: 360px;
+    background-color: white;
+    padding: 0 30px;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px #ccc;
+}
+.titulologin{
+    display: flex;
+    width: 100%;
+    height: 50px;
+    font-size: 18px;
+    margin-bottom: 10px;
+    margin-top: 10px;
+    text-align: center;
+    color:#004840;
+    font-weight: bold;
+    align-items: center;
+    justify-content: center;
+}
+.formulariologin input:focus{
+    outline: none;
+    border: 1px solid #004840;
+}
+
+.formulariologin label{
+    font-size: 15px;
+    color:#004840;
+    width: 100%;
+}
+.formulariologin input{
+    display: flex;
+    width: 100%;
+    height: 25px;
+    background-color: white;
+    border-radius: 5px;
+    border: 1px solid #004840;
+    font-size: 15px;
+    color: #505050;
+    padding: 0;
+}
+.formulariologin span{
+    display: inline-block;
+    position: absolute;
+    color: red;
+    font-size: 11px;
+    height: 3px;
+    font-weight: 600;
+}
+.formulariologin p{
+    display: flex;
+    width: 100%;
+    font-size: 15px;
+    justify-content: center;
+}
+.formulariologin a{
+    text-decoration: none;
+    color: #004840 ;
+}
+
+.checkbox{
+    display: inline-block;
+    width:5%;
+    height: 13px;
+}
+.labelcheckbox{
+    display: inline-block;
+    width: 80%;
+    height: 10px;
+    margin-left:0;
+    margin-left: 8px;
+}
+#confirm{
+    width: 15px;
+    height: 15px;
+    margin: 0;
+}
+.input-with-icon-login{
+    position: relative;
+  }
+.mostra-password-login{
+    position: absolute;
+    top: 20%;
+    right: 10px;
+    transform: translateY(-50%);
+    cursor: pointer;
+    color:#505050
+}
+
+@media (max-width:400px) {
+    .formulariologin{
+        width: 290px;
+        height: 330px;
+        padding: 0 20px;
+    }
+    .titulologin{
+        display: flex;
+        width: 100%;
+        height: 50px;
+        font-size: 16px;
+    }
+    .formulariologin label{
+        font-size: 14px;
+        color:#004840;
+        width: 100%;
+    }
+    .formulariologin input{
+        font-size: 13px;
+        width: 100%;
+    }
+    .formulariologin span{
+        font-size: 10px;
+        font-weight: 500;
+        width: 100%;
+    }
+    
+    .checkbox{
+        display: inline-block;
+        width:3%;
+        height: 13px;
+    }
+    .labelcheckbox{
+        display: inline-block;
+        width: 80%;
+        height: 10px;
+        margin-left:13px;
+        font-size: 11px;
+    }
+    .labelcheckbox label{
+        font-size: 12px;
+    }
+    #confirm{
+        width: 15px;
+        height: 15px;
+
+    }
+
+    .mostra-password-login{
+        right: 10px;
+    }
+}
