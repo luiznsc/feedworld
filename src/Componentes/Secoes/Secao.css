@@ -1,0 +1,132 @@
+.container-secao {
+    width: 65%;
+    height: auto;
+    background-color: #E0E7E9;
+    padding: 20px;
+    margin: 0 auto;
+    border-radius: 5px;
+}
+
+.container-secao h2 {
+    font-size: 24px;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+.container-secao h3 {
+    font-size: 20px;
+    font-weight: bold;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.container-secao p {
+    font-size: 16px;
+    line-height: 1.5;
+    margin-bottom: 15px;
+}
+
+.container-carousel p{
+    color: white
+}
+
+.card{
+    width: 100%;
+    height: auto;
+    background-color: white;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: none;
+}
+.card-title{
+    color: #004840;
+    font-weight: bold;
+}
+.card-text{
+    color: #004840;
+
+}
+.card .btn-primary{
+    background-color: #28a464;
+    border: none;
+    color: white;
+    font-weight: bold;
+    padding: 10px;
+    border-radius: 8px;
+    text-decoration: none;
+}
+
+@media (max-width:400px){
+    .container-secao {
+        width: 90%;
+    }
+    
+    .container-secao h2 {
+        font-size: 22px;
+    }
+    
+    .container-secao h3 {
+        font-size: 18px;
+    }
+    
+    .container-secao p {
+        font-size: 15px;
+    }
+    
+    .card{
+        width: 100%;
+    }
+}
+@media (min-width:600px){
+    .container-secao {
+        width: 95%;
+    }
+}
+@media (min-width:768px){
+    .container-secao {
+        width: 85%;
+    }
+    
+    .container-secao h2 {
+        font-size: 22px;
+    }
+    
+    .container-secao h3 {
+        font-size: 18px;
+    }
+    
+    .container-secao p {
+        font-size: 15px;
+    }
+    
+    .card{
+        width: 100%;
+    }
+}
+@media (min-width:1024px){
+    .container-secao {
+        width: 800px;
+    }
+    
+    .container-secao h2 {
+        font-size: 25px;
+    }
+    
+    .container-secao h3 {
+        font-size: 20px;
+    }
+    
+    .container-secao p {
+        font-size: 18px;
+    }
+    
+    .card{
+        width: 100%;
+    }
+}
+@media (min-width:1200px){
+    .container-secao {
+        width: 970px;
+    }
+    
+}

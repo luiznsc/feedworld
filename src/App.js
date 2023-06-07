@@ -8,7 +8,9 @@ import CadastroTela from './Componentes/Cadastro/CadastroTela';
 import Login from './Componentes/Login/Login';
 import MeuGerenciamento from './Componentes/MeuGerenciamento/MeuGerenciamento';
 import Duvidas from './Componentes/Duvidas/Duvidas';
-import Secao1 from './Componentes/Secao1/Secao1';
+import Secao1 from './Componentes/Secoes/Secao1';
+import Secao2 from './Componentes/Secoes/Secao2';
+import Secao3 from './Componentes/Secoes/Secao3';
 
 export default function App() {
   return (
@@ -29,8 +31,8 @@ export default function App() {
           <Route path='/cadastro' element={<CadastroTela/>}/>
           <Route path='/duvidas' element={<Duvidas/>}/>
           <Route path='/secao1' element={<Secao1/>}/>
-          {/* <Route path='/secao2' element={<Secao2/>}/>
-          <Route path='/secao3' element={<Secao3/>}/> */}
+          <Route path='/secao2' element={<Secao2/>}/>
+          <Route path='/secao3' element={<Secao3/>}/>
         </Routes>
       </BrowserRouter>
     </div>

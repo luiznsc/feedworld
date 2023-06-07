@@ -45,15 +45,15 @@ export default function Cadastro() {
     setShowPassword((prevShowPassword) => !prevShowPassword);
   };
 
-  function Cadastro(dadosUsuario) {
+  function handleCadastro(dadosUsuario) {
     //VALIDAR DADOS
-    schema.validate(dadosUsuario)
-    console.log("Dados válidos - Caastro realizado", dadosUsuario);
+    // schema.validate(dadosUsuario)
+    console.log("Dados válidos - Cadastro realizado", dadosUsuario);
     alert("Cadastro realizado com sucesso!");
     window.location.href = "/login";
 
     //CADASTRAR NA API
-    fetch("http://localhost:8080/GipoApp/rest/usuario", {
+    fetch("http://localhost:8080/MyFarm1/rest/usuario", {
       method: "POST",
       headers: {
         Accept: "application/json",
@@ -65,7 +65,6 @@ export default function Cadastro() {
       .then(function (response) {
         alert("Cadastro realizado com sucesso!");
       })
-      //o que é retornado em JSON é armazenado em dadosUsuario e exibido no console do navegador
       .catch(function (error) {
         console.log(error)
       });
@@ -78,7 +77,7 @@ export default function Cadastro() {
 
         <h1 className="tituloformulario">Criar conta</h1>
 
-        <form onSubmit={handleSubmit(Cadastro)} >
+        <form onSubmit={handleSubmit(handleCadastro)} >
 
           <label htmlFor="nome">Nome:</label>
           <input type="text" id="nome" {...register("nome")} />

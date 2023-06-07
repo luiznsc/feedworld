@@ -41,7 +41,7 @@ export default function Login() {
         console.log("Dados inseridos:", dadosUsuario);
   
         // BUSCAR USUÁRIO NA API
-        fetch("http://localhost:8080/GipoApp/rest/usuario", {
+        fetch("http://localhost:8080/MyFarm1/rest/usuario", {
           method: "GET",
           headers: {
             Accept: "application/json",
@@ -49,7 +49,7 @@ export default function Login() {
         })
           .then(function (response) {
             if (response.ok) {
-              return response.json(); // Converte a resposta em JSON
+              return response.json();
             } else {
               throw new Error("Erro ao buscar usuários");
             }
@@ -67,7 +67,7 @@ export default function Login() {
               localStorage.setItem("nomeUsuario", nomeUsuario);
 
               alert("Login realizado com sucesso!");
-              window.location.href = "/user";
+              window.location.href = "/homeuser";
 
             } else {
               console.log("Dados de login inválidos");

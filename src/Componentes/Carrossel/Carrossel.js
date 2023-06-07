@@ -8,7 +8,7 @@ export default function Carrossel() {
     <div className='container-carousel'>
       <Carousel>
         <Carousel.Item>
-          <Link to="/secao1">
+          <Link to="/secao1" target="_blank">
             <img
               className="d-block w-100"
               src="./img/fome.jpg"
@@ -22,7 +22,7 @@ export default function Carrossel() {
         </Carousel.Item>
 
         <Carousel.Item>
-          <Link to="/secao2">
+          <Link to="/secao2" target="_blank">
             <img
               className="d-block w-100"
               src="./img/distribuicao.jpg"
@@ -36,7 +36,7 @@ export default function Carrossel() {
         </Carousel.Item>
 
         <Carousel.Item>
-          <Link to="/secao3">
+          <Link to="/secao3" target="_blank">
             <img
               className="d-block w-100"
               src="./img/maquinario.jpg"

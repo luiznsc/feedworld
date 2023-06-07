@@ -1,61 +1,31 @@
 import "./MeuGerenciamento.css";
-import styled from "styled-components";
 import SisGerenciamento from "../SisGerenciamento/SisGerenciamento";
 import TableSafras from "../TableSafras/TableSafras";
-import { useEffect, useState } from "react";
 import { toast, ToastContainer } from "react-toastify";
+import { useState } from "react";
 import "react-toastify/dist/ReactToastify.css";
-import axios from "axios";
 import Header from "../Header/Header";
 import Footer from "../Footer/Footer";
 
 
-const Container = styled.div`
-  width: 100%;
-  max-width: 800px;
-  margin-top: 20px;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 10px;
-  margin-left: auto;
-  margin-right: auto;
-  height: auto;
-  min-height: 550px;
-`;
-
-const Title = styled.h2`
-  color: #004840;
-  weight: 700;
-  text-align: center;
-  `;
-
 export default function MeuGerenciamento() {
-  const [users, setUsers] = useState([]);
   const [onEdit, setOnEdit] = useState(null);
-
-  const getUsers = async () => {
-    try {
-      const res = await axios.get("http://localhost:8800");
-      setUsers(res.data.sort((a, b) => (a.nome > b.nome ? 1 : -1)));
-    } catch (error) {
-      toast.error(error);
-    }
-  };
-
-  useEffect(() => {
-    getUsers();
-  }, [setUsers]);
-
   return (
     <>
     <Header/>
     
-      <Container>
-        <Title>GERENCIAMENTO DE SAFRAS</Title>
-        <SisGerenciamento onEdit={onEdit} setOnEdit={setOnEdit} getUsers={getUsers} />
-        <TableSafras setOnEdit={setOnEdit} users={users} setUsers={setUsers} />
-      </Container>
+      <div className="container-titulo">
+        <h2>GERENCIAMENTO DE SAFRAS</h2>
+        <h5>Após registrar sua safra, poderá gerencia-la nessa aba e acompanha-la na tela inicial atráves do calendário.</h5>
+        <p>- Ao editar uma safra registrada você deverá utilizar o mesmo 'Cód. Safra', caso contrário não será possível atualizar os dados da safra.</p>
+        <p>- Após editar clique no check e atualize a página.</p>
+      </div>
+
+      <div className="container-gerenciamento">
+        <SisGerenciamento onEdit={onEdit} setOnEdit={setOnEdit}/>
+        <TableSafras/>
+      </div>
+      
       <ToastContainer autoClose={3000} position={toast.POSITION.BOTTOM_LEFT} />
 
       <Footer/>

@@ -1,0 +1,131 @@
+.table-edit {
+    width: 900px;
+    border-collapse: collapse;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px #ccc;
+}
+
+.table-edit th {
+    background-color: #E0E7E9;
+    text-align: left;
+    padding: 10px;
+}
+.table-edit thead{
+    color: #004840;
+}
+
+.table-edit input{
+    width: 100%;
+    border: none;
+    background-color: transparent;
+    text-align: start;
+    font-size: 14px;
+    color: black;
+}
+
+.table-edit td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+.table-edit tr:hover {
+    background-color: #f2f2f2;
+}
+
+.table-edit td:last-child {
+    white-space: nowrap;
+}
+
+@media (max-width: 768px) {
+    .table-edit {
+      width: 290px;
+      border-collapse: collapse;
+      border-radius: 5px;
+      box-shadow: 0px 0px 5px #ccc;
+      margin-bottom: 50px;
+    }
+    
+    .table-edit td,
+    .table-edit th {
+      display: block;
+    }
+  
+    .table-edit thead {
+      display: none;
+    }
+  
+    .table-edit td::before {
+      content: attr(data-label);
+      font-weight: bold;
+      display: inline-block;
+      width: 120px;
+    }
+  
+    .table-edit td:last-child {
+      border-bottom: solid;
+      width: 100%;
+    }
+  
+    #edit, #delete{
+      display: block;
+    }
+}
+@media (min-width: 768px){
+.table-edit {
+    width: 650px;
+    border-collapse: collapse;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px #ccc;
+}
+
+.table-edit th {
+    background-color: #E0E7E9;
+    text-align: left;
+    padding: 10px;
+}
+.table-edit thead{
+    color: #004840;
+}
+
+.table-edit td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.table-edit tr:hover {
+    background-color: #f2f2f2;
+}
+
+.table-edit td:last-child {
+    white-space: nowrap;
+}
+}
+@media (min-width: 924px){
+.table-edit {
+    width: 900px;
+    border-collapse: collapse;
+    border-radius: 5px;
+    box-shadow: 0px 0px 5px #ccc;
+}
+
+.table-edit th {
+    background-color: #E0E7E9;
+    text-align: left;
+    padding: 10px;
+}
+.table-edit thead{
+    color: #004840;
+}
+
+.table-edit td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+}
+
+.table-edit tr:hover {
+    background-color: #f2f2f2;
+}
+
+.table-edit td:last-child {
+    white-space: nowrap;
+}
+}
